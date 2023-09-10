@@ -9,12 +9,44 @@
 <pre>
   08.30|09.30|10.30|11.30|12.30|13.30|14.30|15.30|16.30|17.30
 M   |XX|XX|XX|XX|XX|XX|XX|XX|XX|XX|XX|XX|X |  |  |  |  |  |  
-T   |XX|XX|XX|XX|XX|XX|XX|XX|XX|  |  |  |  |  |  |  |XX|XX|XX
-W   |  |  |  |  |  |  |  |  |  |  |XX|XX|X |  |  |  |XX|XX|XX
-T   |  |  |  |  |  |  |  |XX|XX|  |  |  |  |  |  |  |  |  |  
+T   |XX|XX|XX|XX|XX|XX|XX|XX|XX| X|XX|XX|XX|X |  |  |XX|XX|XX
+W   |  |  |  |  |  |  |  |XX|XX|  |XX|XX|X |  |  |  |XX|XX|XX
+T   |XX|XX|XX|XX|XX|XX|X |XX|XX| X|XX|XX|XX|X |  |  |  |  |  
 F   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
 
 X = BUSY
+
+---
+	
+In more detail...
+
+  08.30|09.30|10.30|11.30|12.30|13.30|14.30|15.30|16.30|17.30
+M   |XX|XX|X-|--|XX|XX|X-|--|--|--|XX|XX|X |  |  |  |  |  |  
+T   |XX|XX|--|--|--|--|--|XX|XX| X|XX|XX|XX|X |  |  |--|--|--
+W   |  |  |  |  |  |  |  |--|--|  |XX|XX|X |  |  |  |XX|XX|XX
+T   |--|--|--|--|--|--|- |--|--| X|XX|XX|XX|X |  |  |  |  |  
+F   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+
+X = definitely busy
+- = reserved but flexible
+	
+---
+	
+In even more detail... 
+	
+  08.30|09.30|10.30|11.30|12.30|13.30|14.30|15.30|16.30|17.30
+M   |TT|TT|TT|TT|TT|TT|TT|TT|MM|MM|CC|CC|C |  |  |  |  |  |  
+T   |CC|CC|CC|CC|OO|OO|OO|MM|MM| W|WW|WW|WW|W |  |  |CC|CC|CC
+W   |  |  |  |  |  |  |  |MM|MM|  |CC|CC|C |  |  |  |CC|CC|CC
+T   |RR|RR|RR|RR|RR|RR|R |MM|MM| W|WW|WW|WW|W |  |  |  |  |  
+F   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+
+T = teaching
+M = meeting
+C = class
+O = office hours
+W = writing
+R = research
 </pre>
 </body>
 </html>
